@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="WDD231 Course Home Page">
+    <meta name="author" content="Your Name">
+    <title>WDD231 Home</title>
+
+    <link rel="stylesheet" href="styles/coursesmall.css">
+    <link rel="stylesheet" href="styles/courselarger.css
+    ">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/book.svg" alt="logo">
+        <span>Tom Emem</span>
+        <button id="menu">☰</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Home</h1>
+
+        <section>
+            <h2>About Me</h2>
+            <p>My name is Tom Emem. I am a Nigerian. I am currently majoring in Software Development in Brigham Young University through the pathway.</p>
+        </section>
+
+        <section>
+            <h2>Courses</h2>
+            <div id="courses"></div>
+        </section>
+
+        <section>
+            <h2>Certificate Courses</h2>
+
+            <button id="all">All</button>
+            <button id="wdd">WDD</button>
+            <button id="cse">CSE</button>
+
+            <div id="courseList"></div>
+
+            <p id="credits"></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="social">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+        </div>
+
+        <p>
+            © <span id="year"></span> Tom Emem | Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+@media (min-width: 700px) {
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    nav a {
+        padding: 1rem 2rem;
+    }
+
+    main {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    #courseList {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+}
