@@ -78,3 +78,7 @@ footer {
     margin: 0 .5rem;
     color: white;
 }
+nav a.active {
+    background: #555;
+    font-weight: bold;
+}
