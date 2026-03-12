@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     margin: 0;
 }
 
@@ -81,4 +81,22 @@ footer {
 nav a.active {
     background: #555;
     font-weight: bold;
+}
+.social img {
+    width: 40px;
+    margin: 0 10px;
+}
+.social img:hover {
+    transform: scale(1.1);
+}
+section img {
+    max-width: 100%;
+    height: auto;
+}
+.top-grid img {
+    max-width: 250px;
+    width: 100%;
+}
+.top-grid section:last-child {
+    text-align: center;
 }

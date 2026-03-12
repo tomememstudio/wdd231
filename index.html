@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD231 Course Home Page">
-    <meta name="author" content="Your Name">
+    <meta name="description" content="Home page for WDD231 Web Frontend Development I course. Includes course projects, assignments, and learning progress by Tom Emem.">
+    <meta name="author" content="Tom Emem">
     <title>WDD231 Home</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/coursesmall.css">
     <link rel="stylesheet" href="styles/courselarger.css">
     <link rel="icon" href="favicon.ico">
@@ -20,9 +23,9 @@
 <body>
 
     <header>
-        <img src="images/book.svg" alt="logo">
+        <img src="images/book.svg" alt="site-logo">
         <span>Tom Emem</span>
-        <button id="menu">☰</button>
+        <button id="menu" aria-label="Menu">☰</button>
     </header>
 
     <nav>
@@ -46,14 +49,14 @@
         </section>
 
         <section>
-            <h2>Courses</h2>
-            <div id="courses"></div>
+            <h2>Student Photo</h2>
+            <img src="images/profile.jpeg" alt="Photo of Tom Emem">
         </section>
 
     </div>
 
     <section>
-        <h2>Certificate Courses</h2>
+        <h2>Web Certificate Courses</h2>
 
         <button id="all">All</button>
         <button id="wdd">WDD</button>
@@ -68,8 +71,13 @@
 </main>
 <footer>
     <div class="social">
-        <a href="#">GitHub</a>
-        <a href="#">LinkedIn</a>
+        <a href="https://github.com/tomememstudio" target="_blank">
+            <img src="images/github.svg" alt="GitHub profile">
+        </a>
+    
+        <a href="https://www.linkedin.com/in/emem-tom-12b011285/" target="_blank">
+            <img src="images/linkedin.svg" alt="LinkedIn profile">
+        </a>
     </div>
     
     <p>
