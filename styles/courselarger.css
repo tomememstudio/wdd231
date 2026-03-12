@@ -13,28 +13,15 @@
         justify-content: center;
     }
 
-    nav li {
-        border: none;
-    }
-
-    nav a {
-        padding: 1rem 2rem;
-    }
-
     main {
         max-width: 900px;
         margin: auto;
     }
 
-    #courseList {
+    .top-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
 
-}
-.top-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
 }
