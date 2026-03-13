@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "TechHub Lagos",
+            "address": "12 Marina Road, Lagos",
+            "phone": "+2348001112222",
+            "website": "https://techhub.com",
+            "image": "techhub.jpg",
+            "membership": 3
+        },
+        {
+            "name": "Green Farms",
+            "address": "Lekki Phase 1",
+            "phone": "+2348003334444",
+            "website": "https://greenfarms.com",
+            "image": "farm.jpg",
+            "membership": 2
+        },
+        {
+            "name": "Bright Bank",
+            "address": "Victoria Island",
+            "phone": "+2348005556666",
+            "website": "https://brightbank.com",
+            "image": "bank.jpg",
+            "membership": 3
+        },
+        {
+            "name": "Urban Fashion",
+            "address": "Ikeja City Mall",
+            "phone": "+2348007778888",
+            "website": "https://urbanfashion.com",
+            "image": "fashion.jpg",
+            "membership": 1
+        },
+        {
+            "name": "Fresh Mart",
+            "address": "Yaba Lagos",
+            "phone": "+2348009990000",
+            "website": "https://freshmart.com",
+            "image": "mart.jpg",
+            "membership": 1
+        },
+        {
+            "name": "Skyline Hotels",
+            "address": "Victoria Island",
+            "phone": "+2348002223333",
+            "website": "https://skylinehotels.com",
+            "image": "hotel.jpg",
+            "membership": 2
+        },
+        {
+            "name": "Lagos Media Group",
+            "address": "Surulere Lagos",
+            "phone": "+2348004445555",
+            "website": "https://lagosmedia.com",
+            "image": "media.jpg",
+            "membership": 3
+        }
+    ]
+}

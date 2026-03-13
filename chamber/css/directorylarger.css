@@ -1,0 +1,52 @@
+@media screen and (min-width: 640px) {
+
+    /* ---------- HEADER ---------- */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* ---------- NAVIGATION ---------- */
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    nav a {
+        padding: 1rem;
+    }
+
+    /* ---------- DIRECTORY GRID ---------- */
+
+    #members.grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+
+    /* ---------- DESKTOP GRID ---------- */
+
+    #members.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* card hover */
+
+    .card:hover {
+        transform: scale(1.03);
+        transition: 0.3s;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+}
