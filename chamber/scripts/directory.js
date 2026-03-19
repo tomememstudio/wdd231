@@ -1,22 +1,32 @@
 const url = "data/members.json";
 const container = document.querySelector("#members");
 
+// FETCH DATA
 async function getMembers() {
+    try {
+        const response = await fetch(url);
 
-    const response = await fetch(url);
-    const data = await response.json();
+        if (!response.ok) {
+            throw new Error("Failed to fetch data");
+        }
 
-    displayMembers(data.members);
+        const data = await response.json();
+        displayMembers(data.members);
 
+    } catch (error) {
+        console.error("Error loading members:", error);
+    }
 }
 
 getMembers();
 
-const displayMembers = (members) => {
+// DISPLAY MEMBERS
+function displayMembers(members) {
+    container.innerHTML = ""; // clear if needed
 
     members.forEach(member => {
-
         const card = document.createElement("section");
+        card.classList.add("card"); // 🔥 IMPORTANT FIX
 
         const name = document.createElement("h3");
         const address = document.createElement("p");
@@ -29,10 +39,11 @@ const displayMembers = (members) => {
         phone.textContent = member.phone;
 
         website.textContent = "Visit Website";
-        website.href = member.website;
+        website.href = member.websiteURL;
+        website.target = "_blank";
 
         image.src = `images/${member.image}`;
-        image.alt = member.name;
+        image.alt = `${member.name} logo`;
         image.loading = "lazy";
 
         card.appendChild(name);
@@ -42,13 +53,13 @@ const displayMembers = (members) => {
         card.appendChild(website);
 
         container.appendChild(card);
-
     });
-
 }
-const members = document.querySelector("#members");
-members.classList.add("grid");
 
+// DEFAULT VIEW
+container.classList.add("grid");
+
+// TOGGLE VIEW
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
 
@@ -61,6 +72,7 @@ listButton.addEventListener("click", () => {
     container.classList.add("list");
     container.classList.remove("grid");
 });
-document.querySelector("#year").textContent = new Date().getFullYear();
 
+// FOOTER DATES
+document.querySelector("#year").textContent = new Date().getFullYear();
 document.querySelector("#lastModified").textContent = document.lastModified;

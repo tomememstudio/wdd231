@@ -111,14 +111,14 @@ h2 {
     display: block;
     margin: 0 auto;
 }
-.card {
-    text-align: center;
-}
 
 .card h3 {
     margin: .5rem 0;
 }
-
+.active {
+    background: var(--accent);
+    color: black;
+}
 /* ---------- LIST VIEW ---------- */
 
 #members.list {
