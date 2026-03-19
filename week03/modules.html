@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tom Emem">
+    <meta name="description" content="BYU-I WDD 231: Modular JavaScript Example - Manage course sections and enrollments">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYU-I Course Enrollment</title>
+    <link rel="stylesheet" href="styles/modules.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="courseTitle">Course Title</h1>
+        <nav>
+            <a href="#">Home</a> |
+            <a href="#">W1</a> |
+            <a href="#">W2</a> |
+            <a href="#">W3</a> |
+            <a href="#">W4</a> |
+            <a href="#">W5</a> |
+            <a href="#">W6</a> |
+            <a href="#">W7</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <label for="sectionNumber">Select Section:</label>
+            <select id="sectionNumber"></select>
+            <button id="enrollStudent">Enroll Student</button>
+            <button id="dropStudent">Drop Student</button>
+        </section>
+
+        <section>
+            <h2>Sections:</h2>
+            <ul id="sections"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BYU-I WDD 231</p>
+    </footer>
+
+    <script type="module" src="scripts/modules.mjs"></script>
+</body>
+
+</html>
