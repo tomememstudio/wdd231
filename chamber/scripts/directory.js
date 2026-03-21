@@ -73,6 +73,5 @@ listButton.addEventListener("click", () => {
     container.classList.remove("grid");
 });
 
-// FOOTER DATES
 document.querySelector("#year").textContent = new Date().getFullYear();
 document.querySelector("#lastModified").textContent = document.lastModified;
