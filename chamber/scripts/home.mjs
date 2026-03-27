@@ -49,7 +49,7 @@ async function getSpotlights() {
         const data = await response.json();
 
         const filtered = data.members.filter(
-            m => m.membership === "Gold" || m.membership === "Silver"
+            m => m.membershipLevel === 3 || m.membershipLevel === 2
         );
 
         const random = filtered
@@ -62,6 +62,7 @@ async function getSpotlights() {
         console.error("Spotlight error:", error);
     }
 }
+
 
 function displaySpotlights(members) {
     spotlightContainer.innerHTML = "";
@@ -76,7 +77,7 @@ function displaySpotlights(members) {
             <p>${member.address}</p>
             <p>${member.phone}</p>
             <p><strong>${member.membership} Member</strong></p>
-            <a href="${member.websiteURL}" target="_blank">Visit Website</a>
+            <a href="${member.websiteUrl}" target="_blank">Visit Website</a>
         `;
 
         spotlightContainer.appendChild(card);

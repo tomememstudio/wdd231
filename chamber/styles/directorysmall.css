@@ -158,3 +158,17 @@ footer {
 footer p {
     margin: .3rem;
 }
+.cta {
+    position: absolute;
+    bottom: 20px;
+}
+
+.cta {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+section {
+    margin: 2rem 0;
+}
