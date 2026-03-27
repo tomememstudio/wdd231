@@ -8,8 +8,29 @@ const courses = [
     { code: "CSE210", name: "Programming with Classes", credits: 2, completed: true }
 ];
 
+const modal = document.querySelector("#courseModal");
+const closeBtn = document.querySelector("#closeModal");
+const modalContent = document.querySelector("#modalContent");
 const courseContainer = document.querySelector("#courseList");
 const creditDisplay = document.querySelector("#credits");
+
+function showCourseDetails(course) {
+    modalContent.innerHTML = `
+    <h2>${course.subject} ${course.number}</h2>
+    <p><strong>Title:</strong> ${course.title}</p>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Description:</strong> ${course.description}</p>
+    <p><strong>Certificate:</strong> ${course.certificate}</p>
+    <p><strong>Tech Stack:</strong> ${course.technology}</p>
+  `;
+
+    modal.showModal();
+}
+modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        modal.close();
+    }
+});
 
 function displayCourses(courseList) {
 
@@ -51,4 +72,7 @@ document.querySelector("#wdd").addEventListener("click", () => {
 document.querySelector("#cse").addEventListener("click", () => {
     const filtered = courses.filter(course => course.code.includes("CSE"));
     displayCourses(filtered);
+});
+courseCard.addEventListener("click", () => {
+    showCourseDetails(course);
 });
