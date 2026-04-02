@@ -58,3 +58,33 @@
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
 }
+@media (min-width: 641px) {
+    .discover-grid {
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+        max-width: 1100px;
+        /* matches your main content */
+        padding: 0;
+        /* remove extra padding */
+    }
+}
+
+@media (min-width: 1025px) {
+    .discover-grid {
+        grid-template-areas:
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+        max-width: 1200px;
+    }
+}
+
+@media (min-width:1025px) {
+
+    .discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
