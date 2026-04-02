@@ -90,3 +90,8 @@ function capitalize(text) {
 
 getWeather();
 getSpotlights();
+// Set current year
+document.querySelector("#year").textContent = new Date().getFullYear();
+
+// Set last modified date
+document.querySelector("#lastModified").textContent = document.lastModified;

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Project for WDD231 Web Frontend Development I course.Business directory for the Lagos Chamber of Commerce by Tom Emem.">
+    <meta name="author" content="Emem Tom">
+    <title>Lagos Chamber of Commerce Join Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Lagos Chamber Directory">
+    <meta property="og:description" content="Explore businesses in the Lagos Chamber of Commerce">
+    <meta property="og:image" content="https://tomememstudio.github.io/wdd231/chamber/images/chamber.jpg">
+    <meta property="og:url" content="https://tomememstudio.github.io/wdd231/chamber/directory.html">
+
+    <link rel="stylesheet" href="styles/directorynormalize.css">
+    <link rel="stylesheet" href="styles/directorysmall.css">
+    <link rel="stylesheet" href="styles/directorylarger.css">
+    <script src="scripts/join.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Lagos Chamber of Commerce</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    
+        <h1>Join the Chamber</h1>
+    
+        <div class="join-container">
+    
+            <form method="get" action="thankyou.html">
+    
+                <label>
+                    First Name
+                    <input type="text" name="firstname" title="Applicant First Name" autocomplete="given-name" required>
+                </label>
+    
+                <label>
+                    Last Name
+                    <input type="text" name="lastname" title="Applicant Last Name" autocomplete="family-name" required>
+                </label>
+    
+                <label>
+                    Organizational Title
+                    <input type="text" name="orgtitle" title="Your title in the organization"
+                        autocomplete="organization-title" pattern="[A-Za-z\\-\\s]{7,}">
+                </label>
+    
+                <label>
+                    Email
+                    <input type="email" name="email" title="Applicant Email" autocomplete="email"
+                        placeholder="example@email.com" required>
+                </label>
+    
+                <label>
+                    Mobile Phone
+                    <input type="tel" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
+                </label>
+    
+                <label>
+                    Business / Organization Name
+                    <input type="text" name="organization" title="Business or Organization Name" autocomplete="organization"
+                        required>
+                </label>
+    
+                <label>
+                    Membership Level
+                    <select name="membership">
+    
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+    
+                    </select>
+                </label>
+    
+                <label>
+                    Business Description
+                    <textarea name="description" title="Describe your business"></textarea>
+                </label>
+    
+                <input type="hidden" name="timestamp" id="timestamp">
+    
+                <input type="submit" value="Apply for Membership">
+    
+            </form>
+    
+    
+            <section class="membership-cards">
+    
+                <div class="card">
+                    <h3>NP Membership</h3>
+                    <a onclick="npModal.showModal()">Benefits</a>
+                </div>
+    
+                <div class="card">
+                    <h3>Bronze Membership</h3>
+                    <a onclick="bronzeModal.showModal()">Benefits</a>
+                </div>
+    
+                <div class="card">
+                    <h3>Silver Membership</h3>
+                    <a onclick="silverModal.showModal()">Benefits</a>
+                </div>
+    
+                <div class="card">
+                    <h3>Gold Membership</h3>
+                    <a onclick="goldModal.showModal()">Benefits</a>
+                </div>
+    
+            </section>
+    
+        </div>
+    
+    
+        <!-- MODALS -->
+    
+        <dialog id="npModal">
+    
+            <h3>NP Membership Benefits</h3>
+    
+            <ul>
+                <li>No membership fee</li>
+                <li>Networking opportunities</li>
+                <li>Community events</li>
+            </ul>
+    
+            <button onclick="npModal.close()">Close</button>
+    
+        </dialog>
+    
+    
+        <dialog id="bronzeModal">
+    
+            <h3>Bronze Membership Benefits</h3>
+    
+            <ul>
+                <li>Business directory listing</li>
+                <li>Networking events</li>
+                <li>Training workshops</li>
+            </ul>
+    
+            <button onclick="bronzeModal.close()">Close</button>
+    
+        </dialog>
+    
+    
+        <dialog id="silverModal">
+    
+            <h3>Silver Membership Benefits</h3>
+    
+            <ul>
+                <li>All Bronze benefits</li>
+                <li>Event discounts</li>
+                <li>Advertising opportunities</li>
+            </ul>
+    
+            <button onclick="silverModal.close()">Close</button>
+    
+        </dialog>
+    
+    
+        <dialog id="goldModal">
+    
+            <h3>Gold Membership Benefits</h3>
+    
+            <ul>
+                <li>All Silver benefits</li>
+                <li>Homepage spotlight</li>
+                <li>VIP networking events</li>
+                <li>Premium advertising</li>
+            </ul>
+    
+            <button onclick="goldModal.close()">Close</button>
+    
+        </dialog>
+    
+    </main>
+
+    <footer>
+
+        <p>Lagos Chamber of Commerce</p>
+        <p>Email: info@lagoschamber.org</p>
+        <p>Phone: +234 000 000 000</p>
+
+        <p>Emem Tom | WDD 231</p>
+
+        <p>© <span id="year"></span></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+
+    </footer>
+
+</body>
+
+</html>
