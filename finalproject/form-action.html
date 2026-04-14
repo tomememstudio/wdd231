@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the Taste Haven menu with a variety of delicious meals.">
+    <meta name="author" content="Tom Emem">
+    <title>Form Response</title>
+
+    <link rel="stylesheet" href="styles/menusmall.css">
+    <link rel="stylesheet" href="styles/menularger.css">
+    <link rel="icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+    <main>
+        <h2>Form Submitted</h2>
+        
+        <p id="results"></p>
+        
+        <script>
+
+            const params = new URLSearchParams(window.location.search)
+
+            document.querySelector("#results").textContent =
+                `Thank you ${params.get("name")} for contacting us.`
+
+        </script>
+    </main>
+    <footer>
+        <p>
+            © <span id="year"></span> Taste Haven
+        </p>
+        
+        <p id="lastModified"></p>
+        
+        <a href="https://youtube.com/YOURVIDEO" target="_blank">Project Video</a>
+    </footer>
+     
+
+</body>
+
+</html>

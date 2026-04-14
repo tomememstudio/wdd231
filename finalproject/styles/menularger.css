@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+
+    main {
+        max-width: 1100px;
+        margin: auto;
+        max-width: 1100px;
+    }
+
+    #menuContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        gap: 25px;
+        margin-top: 0;
+    }
+
+}

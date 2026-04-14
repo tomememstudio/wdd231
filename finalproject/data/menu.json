@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Jollof Rice",
+        "price": "$10",
+        "category": "Rice",
+        "image": "images/jollof.jpg"
+    },
+    {
+        "name": "Burger",
+        "price": "$12",
+        "category": "Fast Food",
+        "image": "images/burger.jpg"
+    },
+    {
+        "name": "Pizza",
+        "price": "$14",
+        "category": "Italian",
+        "image": "images/pizza.jpg"
+    },
+    {
+        "name": "Pasta",
+        "price": "$11",
+        "category": "Italian",
+        "image": "images/pasta.jpg"
+    },
+    {
+        "name": "Fried Rice",
+        "price": "$10",
+        "category": "Rice",
+        "image": "images/friedrice.jpg"
+    },
+    {
+        "name": "Chicken Wings",
+        "price": "$9",
+        "category": "Snack",
+        "image": "images/wings.jpg"
+    },
+    {
+        "name": "Salad",
+        "price": "$8",
+        "category": "Healthy",
+        "image": "images/salad.jpg"
+    },
+    {
+        "name": "Steak",
+        "price": "$20",
+        "category": "Grill",
+        "image": "images/steak.jpg"
+    },
+    {
+        "name": "Fries",
+        "price": "$6",
+        "category": "Snack",
+        "image": "images/fries.jpg"
+    },
+    {
+        "name": "Ice Cream",
+        "price": "$5",
+        "category": "Dessert",
+        "image": "images/icecream.jpg"
+    },
+    {
+        "name": "Pancakes",
+        "price": "$7",
+        "category": "Breakfast",
+        "image": "images/pancakes.jpg"
+    },
+    {
+        "name": "Shawarma",
+        "price": "$9",
+        "category": "Wrap",
+        "image": "images/shawarma.jpg"
+    },
+    {
+        "name": "Sandwich",
+        "price": "$8",
+        "category": "Snack",
+        "image": "images/sandwich.jpg"
+    },
+    {
+        "name": "Smoothie",
+        "price": "$6",
+        "category": "Drink",
+        "image": "images/smoothie.jpg"
+    },
+    {
+        "name": "Tacos",
+        "price": "$10",
+        "category": "Mexican",
+        "image": "images/tacos.jpg"
+    }
+]
